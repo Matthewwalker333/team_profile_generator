@@ -64,3 +64,34 @@ function addTeamMember() {
         }
     })
 }
+
+function engineerQuery() {
+    inquirer.prompt([{
+            type: "input",
+            name: "name",
+            message: "Engineer's name?"
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "Engineer's ID number:"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Engineer's email address:"
+        },
+        {
+            type: "input",
+            name: "github",
+            message: "What is the URL of the Engineer's GitHub profile?"
+        }
+    ]).then(val => {
+        const engineer = new Engineer(val.name, val.id, val.email, val.github);
+        console.log(engineer);
+        teamMembers.push(engineer);
+        addTeamMember();
+    })
+
+
+};
