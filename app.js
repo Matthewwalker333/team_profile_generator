@@ -95,3 +95,34 @@ function engineerQuery() {
 
 
 };
+
+
+function internQuery() {
+    inquirer.prompt([{
+            type: "input",
+            name: "name",
+            message: "Intern's name?"
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "Intern's ID number:"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Intern's email address:"
+        },
+        {
+            type: "input",
+            name: "school",
+            message: "What school does/did the intern attend?"
+        }
+    ]).then(val => {
+        const intern = new Intern(val.name, val.id, val.email, val.school);
+        teamMembers.push(intern);
+        addTeamMember();
+    })
+
+
+};
