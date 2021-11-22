@@ -1,5 +1,5 @@
 //ode to define and export the Engineer class.
-const Employee = require("./Employee");
+const Employee = require("employee.js");
 
 class Engineer extends Employee {
     constructor(name,id,email,github) {
