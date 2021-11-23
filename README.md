@@ -9,6 +9,7 @@ A command-line program for software engineering teams. The user will be prompted
 ### Visuals:
 ![Screenshot](hw10-screenshot.PNG)
 ![Screenshot](hw10-1-screenshot.PNG)
+![Screenshot](hw10-2-screenshot.PNG)
 
 ### User Video:
 [App Demo Video](https://youtu.be/woVR-an5L24)
